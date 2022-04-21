@@ -3,20 +3,20 @@ import os
 class Config():
   ENV = bool(os.environ.get('ENV', False))
   if ENV:
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", None)
+    BOT_TOKEN = os.environ.get("5327526938:AAHlQxNeiO4kN7igdXGbjTSwAA7qbKdn9HE", None)
     DATABASE_URL = os.environ.get("DATABASE_URL", None)
-    APP_ID = os.environ.get("APP_ID", 6)
-    API_HASH = os.environ.get("API_HASH", None)
+    APP_ID = os.environ.get("14917966", 6)
+    API_HASH = os.environ.get("e25a5d08a31dfc24cb13e0f1e6dbb34e", None)
     SUDO_USERS = list(set(int(x) for x in os.environ.get("SUDO_USERS").split()))
-    SUDO_USERS.append(939425014)
+    SUDO_USERS.append(1045328240)
     SUDO_USERS = list(set(SUDO_USERS))
   else:
-    BOT_TOKEN = "5327526938:AAHlQxNeiO4kN7igdXGbjTSwAA7qbKdn9HE"
+    BOT_TOKEN = ""
     DATABASE_URL = ""
-    APP_ID = "14917966"
-    API_HASH = "e25a5d08a31dfc24cb13e0f1e6dbb34e"
+    APP_ID = ""
+    API_HASH = ""
     SUDO_USERS = list(set(int(x) for x in ''.split()))
-    SUDO_USERS.append(939425014)
+    SUDO_USERS.append(1045328240)
     SUDO_USERS = list(set(SUDO_USERS))
 
 
